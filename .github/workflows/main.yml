@@ -1,0 +1,13 @@
+name: My Workflow
+
+on: [push, pull_request]
+
+jobs:
+  build2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run script
+        run: echo "Hello 한글날"
